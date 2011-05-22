@@ -1,0 +1,658 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(NDEBUG)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(NDEBUG) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 3,0,28,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "TARI Racing Software\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", "3, 0, 28, 0\0"
+            VALUE "InternalName", "ecuExplorer\0"
+            VALUE "LegalCopyright", "Copyright © 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ecuExplorer.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ecuExplorer\0"
+            VALUE "ProductVersion", "3, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(_DEBUG)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_DEBUG) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 0,0,0,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "DEBUG VERSION - NOT FOR RELEASE\0"
+            VALUE "CompanyName", "TARI Racing Software\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", "0, 0, 0, 0\0"
+            VALUE "InternalName", "ecuExplorer\0"
+            VALUE "LegalCopyright", "Copyright © 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ecuExplorer.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ecuExplorer\0"
+            VALUE "ProductVersion", "0, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+#endif
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "ecuExplorer.ico"
+IDR_DATAITEMFRAME       ICON    DISCARDABLE     "idr_data.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open &Log File\tCtrl-O",      ID_MAINFRAME_OPENLOGFILE
+        MENUITEM "Open ROM File\tCtrl-R",       ID_MAINFRAME_OPENROMFILE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl-X",               ID_MAINFRAME_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Reset ECU\tF7",              ID_MAINFRAME_RESETECU
+        POPUP "Adjust I&dle Speeds"
+        BEGIN
+            POPUP "Normal"
+            BEGIN
+                MENUITEM "Query Current Value",         ID_ADJUSTIDLESPEEDS_NORMAL_QUERYCURRENT
+
+                MENUITEM SEPARATOR
+                MENUITEM "Increase by 100RPM",          ID_ADJUSTIDLESPEEDS_NORMAL_INCREASE100
+
+                MENUITEM "Increase by 50RPM",           ID_ADJUSTIDLESPEEDS_NORMAL_INCREASE50
+
+                MENUITEM "Increase by 25RPM",           ID_ADJUSTIDLESPEEDS_NORMAL_INCREASE25
+
+                MENUITEM SEPARATOR
+                MENUITEM "Decrease by 25RPM",           ID_ADJUSTIDLESPEEDS_NORMAL_DECREASE25
+
+                MENUITEM "Decrease by 50RPM",           ID_ADJUSTIDLESPEEDS_NORMAL_DECREASE50
+
+                MENUITEM "Decrease by 100RPM",          ID_ADJUSTIDLESPEEDS_NORMAL_DECREASE100
+
+                MENUITEM SEPARATOR
+                MENUITEM "Reset",                       ID_ADJUSTIDLESPEEDS_NORMAL_RESET
+
+            END
+            POPUP "Air Conditioning"
+            BEGIN
+                MENUITEM "Query Current Value",         ID_ADJUSTIDLESPEEDS_AIRCON_QUERYCURRENT
+
+                MENUITEM SEPARATOR
+                MENUITEM "Increase by 100RPM",          ID_ADJUSTIDLESPEEDS_AIRCON_INCREASE100
+
+                MENUITEM "Increase by 50RPM",           ID_ADJUSTIDLESPEEDS_AIRCON_INCREASE50
+
+                MENUITEM "Increase by 25RPM",           ID_ADJUSTIDLESPEEDS_AIRCON_INCREASE25
+
+                MENUITEM SEPARATOR
+                MENUITEM "Decrease by 25RPM",           ID_ADJUSTIDLESPEEDS_AIRCON_DECREASE25
+
+                MENUITEM "Decrease by 50RPM",           ID_ADJUSTIDLESPEEDS_AIRCON_DECREASE50
+
+                MENUITEM "Decrease by 100RPM",          ID_ADJUSTIDLESPEEDS_AIRCON_DECREASE100
+
+                MENUITEM SEPARATOR
+                MENUITEM "Reset",                       ID_ADJUSTIDLESPEEDS_AIRCON_RESET
+
+            END
+        END
+        POPUP "Adjust I&gnition Timing"
+        BEGIN
+            MENUITEM "Query Current Value",         ID_ADJUSTIGNITIONRETARD_QUERYCURRENT
+
+            MENUITEM SEPARATOR
+            MENUITEM "Increase by 1°",              ID_ADJUSTIGNITIONRETARD_INCREASE1
+
+            MENUITEM SEPARATOR
+            MENUITEM "Decrease by 1°",              ID_ADJUSTIGNITIONRETARD_DECREASE1
+
+            MENUITEM SEPARATOR
+            MENUITEM "Reset",                       ID_ADJUSTIGNITIONRETARD_RESET
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "ecuQuery",                    ID_TOOLS_ECUQUERY
+        MENUITEM SEPARATOR
+        POPUP "ecuFlash"
+        BEGIN
+            MENUITEM "&Read ECU Flash Memory",      ID_MAINFRAME_ECUFLASHREADECUFLASHMEMORY
+
+            MENUITEM "Write ROM Image to ECU Flash Memory", 
+                                                    ID_TOOLS_WRITEROMIMAGETOECUFLASHMEMORY
+
+            MENUITEM "Test Write to ECU Flash Memory", 
+                                                    ID_TOOLS_TESTWRITETOECUFLASHMEMORY
+
+            MENUITEM "Compare ROM Image to ECU Flash Memory", 
+                                                    ID_TOOLS_COMPAREROMIMAGETOECUFLASHMEMORY
+
+        END
+    END
+    POPUP "&Editors"
+    BEGIN
+        MENUITEM "&Label Data File",            ID_MAINFRAME_EDITORS_LABELDATAFILE
+
+        MENUITEM "&Data Item Data File",        ID_MAINFRAME_EDITORS_DATAITEMDATAFILE
+
+        MENUITEM "&OBD Data File",              ID_MAINFRAME_EDITORS_OBDDATAFILE
+
+        MENUITEM "&Map Data File",              ID_MAINFRAME_EDITORS_MAPDATAFILE
+
+        MENUITEM "&ROM Revision Data File",     ID_MAINFRAME_EDITORS_ROMDATAFILE
+
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Show Debug &Console",         ID_MAINFRAME_SHOWDEBUGCONSOLE
+
+        MENUITEM "Capture &Error Log",          ID_MAINFRAME_CAPTUREERRORLOG
+        MENUITEM "Capture SSM &Trace File",     ID_MAINFRAME_CAPTUREPROTOCOLTRACEFILE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Configure Comm Settings",     ID_MAINFRAME_SETCOMM
+        MENUITEM SEPARATOR
+        POPUP "ecuFlash"
+        BEGIN
+            POPUP "Model"
+            BEGIN
+                MENUITEM "Subaru WRX USDM 2002-2003",   ID_OPTIONS_ECUFLASH_MODEL_SUBARUWRXUSDM20022003
+
+                MENUITEM "Subaru WRX USDM 2004-2005",   ID_OPTIONS_ECUFLASH_MODEL_SUBARUWRXUSDM20042005
+
+                MENUITEM SEPARATOR
+                MENUITEM "Subaru WRX International 2001-2005 (Non USDM)", 
+                                                        ID_OPTIONS_ECUFLASH_MODEL_SUBARUWRXINTERNATIONAL20012005
+
+                MENUITEM SEPARATOR
+                MENUITEM "Subaru STI International 2001-2005 (Non USDM)", 
+                                                        ID_OPTIONS_ECUFLASH_MODEL_SUBARUSTIINTERNATIONAL20012005NONUSDM
+
+            END
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About\tCtrl-F1",             ID_MAINFRAME_ABOUT
+    END
+END
+
+IDR_POPUP_REALTIME MENU DISCARDABLE 
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "Start/Stop File Capture\tINS", ID_POPUP_STARTFILECAPTURE
+        MENUITEM "Choose Logging Directory...", ID_POPUP_CHOOSELOGGINGDIRECTORY
+
+        MENUITEM SEPARATOR
+        MENUITEM "Trigger Logging on Defog Switch\tCtrl-D", 
+                                                ID_POPUP_TRIGGERLOGGINGONDEFOGSWITCH
+
+        MENUITEM "Automatically add new log files to Saved List", 
+                                                IE_POPUP_AUTOMATICALLYADDNEWLOGFILESTOSAVEDLIST
+
+        MENUITEM "Use Absolute Time in File Capture", 
+                                                IE_POPUP_USEABSOLUTETIME
+        MENUITEM SEPARATOR
+        POPUP "Display Options"
+        BEGIN
+            MENUITEM "Convert Injector Pulse Width to Duty %", 
+                                                    ID_POPUP_CONVERT_INJECTOR
+
+            MENUITEM "Convert Celsius to Fahrenheit", 
+                                                    ID_POPUP_CONVERT_TEMPERATURE
+
+            MENUITEM "Convert KPH to MPH",          ID_POPUP_CONVERT_SPEED
+            MENUITEM "Convert PSI (psig) to Bar",   ID_POPUP_CONVERT_PRESSURE
+
+            MENUITEM "Convert Lambda to AFR",       ID_POPUP_CONVERT_AF
+        END
+        POPUP "Capture Options"
+        BEGIN
+            MENUITEM "Pause Data Capture\tCtrl-P",  ID_POPUP_PAUSEDATACAPTURE
+
+            MENUITEM "Reset Min/Max Values\tCtrl-M", 
+                                                    ID_POPUP_RESETMINMAXVALUES
+
+            MENUITEM SEPARATOR
+            MENUITEM "Select All Analogue Parameters\tCtrl-A", 
+                                                    ID_POPUP_SELECTALLANALOGUEPARAMETERS
+
+            MENUITEM "Deselect All Analogue Parameters\tCtrl-N", 
+                                                    ID_POPUP_DESELECTALLANALOGUEPARAMETERS
+
+            MENUITEM SEPARATOR
+            MENUITEM "Select All Digital Parameters\tCtrl-Alt-A", 
+                                                    ID_POPUP_SELECTALLDIGITALPARAMETERS
+
+            MENUITEM "Deselect All Digital Parameters\tCtrl-Alt-N", 
+                                                    ID_POPUP_DESELECTALLDIGITALPARAMETERS
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "View Item Description",       ID_POPUP_VIEWITEMDESCRIPTION
+    END
+END
+
+IDR_POPUP_DATAITEM MENU DISCARDABLE 
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "Mark as Active",              ID_POPUP_MARKASACTIVE
+        MENUITEM "Mark as Inactive",            ID_POPUP_MARKASINACTIVE
+    END
+END
+
+IDR_POPUP_COMMSERIAL MENU DISCARDABLE 
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "SSM Diagnostics",             ID_POPUP_SSMDIAGNOSTICS
+    END
+END
+
+IDR_EDITOR MENU DISCARDABLE 
+BEGIN
+    MENUITEM "&Save",                       ID_MENU_EDITOR_SAVE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            ID_POPUP_SELECTALLANALOGUEPARAMETERS, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "A",            ID_POPUP_SELECTALLDIGITALPARAMETERS, VIRTKEY, CONTROL, 
+                                                    ALT, NOINVERT
+    "D",            ID_POPUP_TRIGGERLOGGINGONDEFOGSWITCH, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "M",            ID_POPUP_RESETMINMAXVALUES, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_POPUP_DESELECTALLANALOGUEPARAMETERS, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "N",            ID_POPUP_DESELECTALLDIGITALPARAMETERS, VIRTKEY, CONTROL, 
+                                                    ALT, NOINVERT
+    "O",            ID_MAINFRAME_OPENLOGFILE, VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_POPUP_PAUSEDATACAPTURE, VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_MAINFRAME_OPENROMFILE, VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_MAINFRAME_ABOUT,     VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         ID_MAINFRAME_ECUFLASH,  VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_F2,          ID_MAINFRAME_LIVEDATACAPTURE, VIRTKEY, NOINVERT
+    VK_F3,          ID_MAINFRAME_DIAGNOSTICTROUBLECODEREADER, VIRTKEY, 
+                                                    NOINVERT
+    VK_F6,          ID_TOOLS_ROADDYNO,      VIRTKEY, NOINVERT
+    VK_F7,          ID_MAINFRAME_RESETECU,  VIRTKEY, NOINVERT
+    VK_INSERT,      ID_POPUP_STARTFILECAPTURE, VIRTKEY, NOINVERT
+    "X",            ID_MAINFRAME_EXIT,      VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_COMM DIALOGEX 0, 0, 167, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Communication Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,111,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,111,50,14
+    GROUPBOX        "Device Control Block",IDC_STATIC,7,7,153,43
+    LTEXT           "XonLim",IDC_STATIC,14,19,24,8
+    LTEXT           "XoffLim",IDC_STATIC,14,31,24,8
+    EDITTEXT        IDC_COMM_XONLIM,107,17,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMM_XOFFLIM,107,30,46,12,ES_AUTOHSCROLL
+    GROUPBOX        "Timeouts",IDC_STATIC,7,51,153,56
+    LTEXT           "ReadIntervalTimeout",IDC_STATIC,13,64,67,8
+    LTEXT           "ReadTotalTimeoutConstant",IDC_STATIC,13,76,88,8
+    EDITTEXT        IDC_COMM_READINTERVALTIMEOUT,107,62,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMM_READTOTALTIMEOUTCONSTANT,107,75,46,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "WriteTotalTimeoutConstant",IDC_STATIC,13,89,87,8
+    EDITTEXT        IDC_COMM_WRITETOTALTIMEOUTCONSTANT,107,88,46,12,
+                    ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ECUFLASH DIALOGEX 0, 0, 393, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "ecuFlash"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Close",IDOK,336,191,50,14
+    EDITTEXT        IDC_ECUFLASH_PROGRESS,7,7,379,180,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DIALOG_ECUQUERY DIALOGEX 0, 0, 406, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "ecuQuery"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDCLOSE,349,191,50,14
+    EDITTEXT        IDC_ECUQUERY_PROGRESS,7,7,392,180,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Start Address - 0xFFFFFF",IDC_ECUQUERY_STATICSTART,7,
+                    194,83,12
+    LTEXT           "Stop Address - 0xFFFFFF",IDC_ECUQUERY_STATICSTOP,149,
+                    194,83,12
+    EDITTEXT        IDC_ECUQUERY_START,92,192,51,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_ECUQUERY_STOP,234,192,51,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "Query",IDCAPTURE,296,191,50,14
+END
+
+IDD_DIALOG_EDITOR_LABEL DIALOGEX 0, 0, 236, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Editor - Label Data File"
+MENU IDR_EDITOR
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_ECU_VERSION,6,7,224,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ECU_DESCRIPTION,12,29,212,26,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Back",IDBACK,6,64,50,14
+    DEFPUSHBUTTON   "&Next",IDNEXT,60,64,50,14
+    DEFPUSHBUTTON   "&Close",IDOK,179,64,50,14
+    GROUPBOX        "ECU",IDC_FRAME_ECU_TYPE,6,19,224,41
+END
+
+IDD_DIALOG_EDITOR_DATAITEM DIALOGEX 0, 0, 236, 313
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Editor - Data Item Data File"
+MENU IDR_EDITOR
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDITOR_DATAITEM_VERSION,6,7,224,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITOR_DATAITEM_NAME,11,28,168,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITOR_DATAITEM_UNIT,184,28,39,12,ES_AUTOHSCROLL
+    CONTROL         "User-Defined Data Item",
+                    IDC_EDITOR_DATAITEM_USERDEFINEDCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,52,94,10
+    EDITTEXT        IDC_EDITOR_DATAITEM_BYTE,141,51,27,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_SPINBYTE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,166,50,10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_BIT,189,51,27,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_SPINBIT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,215,50,10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_ADDRESSHIGH,155,93,62,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_ADDRESSHIGHSPIN,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,215,91,
+                    10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_ADDRESSLOW,155,106,62,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_ADDRESSLOWSPIN,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,216,105,
+                    10,14
+    COMBOBOX        IDC_EDITOR_DATAITEM_TYPE,155,133,62,30,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDITOR_DATAITEM_OPERANDADDITION,155,147,62,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_OPERANDADDITIONSPIN,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,216,145,
+                    10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_OPERANDSUBTRACT,155,160,62,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_OPERANDSUBTRACTSPIN,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,216,159,
+                    10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_OPERANDMULTIPLIER,155,173,62,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_OPERANDMULTIPLIERSPIN,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,216,171,
+                    10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_OPERANDDIVISOR,155,186,62,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_OPERANDDIVISORSPIN,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,216,185,
+                    10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_DECIMALS,155,199,62,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EDITOR_DATAITEM_DECIMALSSPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,216,198,10,14
+    EDITTEXT        IDC_EDITOR_DATAITEM_DESCRIPTION,18,228,199,48,
+                    ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "&Back",IDBACK,7,292,50,14
+    DEFPUSHBUTTON   "&Next",IDNEXT,61,292,50,14
+    DEFPUSHBUTTON   "&Close",IDOK,179,292,50,14
+    GROUPBOX        "Data Item",IDC_STATIC,6,19,224,268
+    GROUPBOX        "INIT Response Lookup",IDC_STATIC,11,41,212,28
+    LTEXT           "Byte",IDC_STATIC,124,53,15,8
+    LTEXT           "Bit",IDC_STATIC,176,53,9,8
+    GROUPBOX        "Memory Location",IDC_STATIC,11,70,212,54
+    LTEXT           "Address (High Byte)\t- 0xFFFFFFFF",
+                    IDC_EDITOR_DATAITEM_ADDRESSHIGHSTATIC,18,95,133,8
+    LTEXT           "Address (Low Byte)\t- 0xFFFFFFFF",
+                    IDC_EDITOR_DATAITEM_ADDRESSLOWSTATIC,18,108,133,8
+    GROUPBOX        "Conversion",IDC_STATIC,12,124,212,92
+    LTEXT           "Operand - Addition",
+                    IDC_EDITOR_DATAITEM_ADDRESSHIGHSTATIC2,18,148,133,8
+    LTEXT           "Operand - Subtract",
+                    IDC_EDITOR_DATAITEM_ADDRESSLOWSTATIC2,18,161,133,8
+    LTEXT           "Operand - Multiplier",
+                    IDC_EDITOR_DATAITEM_ADDRESSHIGHSTATIC3,18,174,133,8
+    LTEXT           "Operand - Divisor",
+                    IDC_EDITOR_DATAITEM_ADDRESSLOWSTATIC3,18,187,133,8
+    LTEXT           "Decimals",IDC_EDITOR_DATAITEM_ADDRESSLOWSTATIC4,18,200,
+                    133,8
+    GROUPBOX        "Description",IDC_STATIC,12,217,212,64
+    LTEXT           "Value Type",IDC_EDITOR_DATAITEM_TYPESTATIC,18,135,133,8
+    CONTROL         "Quad-Span Data Item (FFxxxx type address)",
+                    IDC_EDITOR_DATAITEM_CHECKQUADADDRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,81,190,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_COMM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_DIALOG_ECUFLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOG_ECUQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOG_EDITOR_LABEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DIALOG_EDITOR_DATAITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_BINARY1             BINARY  DISCARDABLE     "KERNEL.HEX"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

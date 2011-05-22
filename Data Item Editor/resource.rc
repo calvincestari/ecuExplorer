@@ -1,0 +1,117 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 313, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EcuExplorer Data Item Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_VERSION,7,7,299,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BYTE,7,23,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHECKSUM,269,23,37,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "New",IDC_NEW,7,87,49,16
+    PUSHBUTTON      "Delete",IDC_DELETE,57,87,49,16
+    PUSHBUTTON      "Load",IDC_LOAD,207,87,49,16
+    PUSHBUTTON      "Save",IDC_SAVE,257,87,49,16
+    PUSHBUTTON      "Back",IDC_BACK,107,87,49,16
+    PUSHBUTTON      "Next",IDC_NEXT,157,87,49,16
+    EDITTEXT        IDC_BIT,44,23,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,81,23,149,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDRESS_HIGH,7,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDRESS_LOW,44,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TYPE,81,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OPERAND_ADDITION,119,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OPERAND_SUBTRACT,156,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OPERAND_MULTIPLIER,194,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OPERAND_DIVIDE,231,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DECIMALS,269,35,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNIT,231,23,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITEM_DESCRIPTION,7,48,299,38,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

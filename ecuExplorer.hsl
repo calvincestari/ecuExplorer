@@ -1,0 +1,91 @@
+// DeltaDash Live Data Item Memory Structure - v1.0.0
+
+#include "standard-types.hsl"
+#pragma byteorder(little_endian) 
+
+struct LiveDataItem
+{
+	unsigned char cByte;
+	unsigned char cBit;
+	unsigned char cLength_name;
+	char cName[cLength_name];
+	unsigned long ulAddress_high;
+	unsigned long ulAddress_low;
+	unsigned char cType;
+	unsigned short usOperand_addition;
+	unsigned short usOperand_subtract;
+	unsigned short usOperand_multiplier;
+	unsigned short usOperand_divide;
+	unsigned short usDecimals;
+	unsigned char cLength_unit;
+	char cUnit[cLength_unit];
+	unsigned short usLength_description;
+	char cUnit[usLength_description];
+	unsigned char cChecksum;
+};
+
+struct LabelItem
+{
+	unsigned char cLength_ECU;
+	unsigned char cECU[cLength_ECU];
+	unsigned char cLength_Label;
+	unsigned char cLabel[cLength_Label];
+	unsigned char cChecksum;
+};
+
+struct dtcItem
+{
+	unsigned char cLength_DTC;
+	unsigned char cDTC[cLength_DTC];
+	unsigned char cLength_Label;
+	unsigned char cLabel[cLength_Label];
+	unsigned long ulCurrent;
+	unsigned long ulHistoric;
+	unsigned char cBit;
+	unsigned char cChecksum;
+};
+
+struct RomTableDefinition
+{
+	unsigned short usMapDefinition;
+	unsigned char cLength_Map;
+	unsigned char szMap[cLength_Map];
+	unsigned long ulOffset_MapType;
+	unsigned char cLength_xAxis;
+	unsigned char szXAxis[cLength_xAxis];
+	unsigned short usDecimals_xAxis;
+	unsigned char cLength_yAxis;
+	unsigned char szYAxis[cLength_yAxis];
+	unsigned short usDecimals_yAxis;
+	unsigned char cLength_unit;
+	unsigned char szUnit[cLength_unit];
+	unsigned short usDecimals_data;
+	unsigned char cChecksum;
+};
+
+struct RomTableDefinition_temp
+{
+	unsigned short usMapDefinition;
+	unsigned char cLength_Map;
+	unsigned char szMap[cLength_Map];
+	unsigned long ulOffset_MapType;
+	unsigned char cLength_xAxis;
+	unsigned char szXAxis[cLength_xAxis];
+	unsigned char cMode;
+	float fOperand;
+	unsigned short usOperand;
+	unsigned short usDecimals_xAxis;
+	unsigned char cLength_yAxis;
+	unsigned char szYAxis[cLength_yAxis];
+	unsigned char cMode;
+	float fOperand;
+	unsigned short usOperand;
+	unsigned short usDecimals_yAxis;
+	unsigned char cLength_unit;
+	unsigned char szUnit[cLength_unit];
+	unsigned char cMode;
+	float fOperand;
+	unsigned short usOperand;
+	unsigned short usDecimals_data;
+	unsigned char cChecksum;
+};
